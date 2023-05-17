@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-
-#define NUMBER '0' /* signal that a number was found */
-
-int getch(void);
-void ungetch(int);
+#include "calc.h"
 
 /* getop: get next character or numeric operand */
 int getop(char s[]) {

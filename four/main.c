@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "calc.h"
 
-#define MAXOP 100  /* max size of operand or operator */
-#define NUMBER '0' /* signal that a number was found */
+#define MAXOP 100 /* max size of operand or operator */
 
 int getop(char[]);
 void push(double);
 double pop(void);
 
 /* reverse polish calculator */
-main() {
+int main() {
     int type;
     double op2;
     char s[MAXOP];
